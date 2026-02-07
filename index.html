@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bacoor City Official LGU Portal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>📧 info@bacoor.gov.ph | 📞 (046) 123-4567</div>
+            <div>⏰ Mon-Fri: 8:00 AM - 5:00 PM</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo">BC</div>
+                <div class="site-title">
+                    <h1>Bacoor City</h1>
+                    <p>Local Government Portal</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#departments" class="nav-link">Departments</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Bacoor City</h2>
+                <p>Building a Progressive, Peaceful, and Prosperous Community</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="btn btn-primary">Access Services</a>
+                    <a href="#" class="btn btn-secondary" onclick="openServiceRequest(); return false;">File a Request</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="section">
+            <div class="container">
+                <div class="news-grid">
+                    <div class="news-card" style="background: linear-gradient(135deg, var(--primary-blue), #1e40af); color: white; border: none;">
+                        <div style="padding: 2.5rem; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
+                            <h3 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">700,000+</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Total Population</p>
+                        </div>
+                    </div>
+                    <div class="news-card" style="background: linear-gradient(135deg, var(--primary-gold), #c19b2f); color: white; border: none;">
+                        <div style="padding: 2.5rem; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🏛️</div>
+                            <h3 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">73</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Barangays</p>
+                        </div>
+                    </div>
+                    <div class="news-card" style="background: linear-gradient(135deg, var(--accent-red), #b91c1c); color: white; border: none;">
+                        <div style="padding: 2.5rem; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+                            <h3 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">24/7</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Online Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="section" id="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest News & Announcements</h2>
+                    <p>Stay updated with the latest happenings in Bacoor City</p>
+                </div>
+                <div id="news-feed" class="news-grid">
+                    <!-- News will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Bacoor City</h2>
+                    <p>Know more about our rich history, vision, and mission</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>Our History</h3>
+                        <p>Bacoor, officially the City of Bacoor, is a 1st class component city in the province of Cavite, Philippines. According to the 2020 census, it has a population of 664,625 people, making it the 15th most populous city in the Philippines and the second-largest city in the province of Cavite after Dasmariñas.</p>
+                        <p style="margin-top: 1rem;">Bacoor was once part of the municipality of Imus until it became an independent municipality in 1903. The city played a significant role in Philippine history, particularly during the Philippine Revolution against Spanish colonial rule.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Vision</h3>
+                        <p>Bacoor envisions itself as a progressive, peaceful, and God-loving city with a quality environment where people live in harmony and unity, enjoying quality life, sustained economic growth, and efficient delivery of basic services.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Mission</h3>
+                        <p>To provide responsive governance through:</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-gray);">
+                            <li>Efficient and effective delivery of basic services</li>
+                            <li>Sustainable economic development programs</li>
+                            <li>Environmental protection and preservation</li>
+                            <li>Quality education and healthcare</li>
+                            <li>Peace and order maintenance</li>
+                            <li>Community participation and empowerment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Departments Page -->
+    <div id="departments" class="page-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>City Departments & Offices</h2>
+                    <p>Find the right department for your needs</p>
+                </div>
+                <div class="dept-search">
+                    <input type="text" id="dept-search-input" placeholder="Search departments or services...">
+                </div>
+                <div id="dept-grid" class="dept-grid">
+                    <!-- Departments will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Public Services</h2>
+                    <p>Access essential government services online</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Business Permit Application</h3>
+                        <p>Apply for new business permits or renew existing ones online.</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Business Permit'); return false;">Apply Now →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Civil Registration</h3>
+                        <p>Request birth, marriage, death certificates and other civil documents.</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Civil Registration'); return false;">Request Documents →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Building Permit</h3>
+                        <p>Apply for construction and building permits for your property.</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Building Permit'); return false;">Apply Now →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Real Property Tax</h3>
+                        <p>Pay your real property taxes and view assessment records.</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Property Tax Payment'); return false;">Pay Now →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Community Tax Certificate</h3>
+                        <p>Apply for and download your community tax certificate (Cedula).</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Community Tax Certificate'); return false;">Get Certificate →</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Health Services</h3>
+                        <p>Access health programs, schedule vaccinations, and medical assistance.</p>
+                        <a href="#" class="service-link" onclick="openServiceRequest('Health Services'); return false;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- News Page -->
+    <div id="news" class="page-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>News & Announcements</h2>
+                    <p>Stay informed with the latest updates</p>
+                </div>
+                <div id="all-news-feed" class="news-grid">
+                    <!-- All news will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page-content">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us for inquiries and feedback</p>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name *</label>
+                        <input type="text" id="contact-name" name="name" required>
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" required>
+                        <span class="error-message">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" id="contact-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                        <span class="error-message">Please enter a subject</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" required></textarea>
+                        <span class="error-message">Please enter your message</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Bacoor City</h3>
+                <p>Local Government Unit</p>
+                <p style="margin-top: 1rem; opacity: 0.8;">Building a Progressive, Peaceful, and Prosperous Community</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#departments" class="nav-link">Departments</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📍 Bacoor City Hall, Cavite</li>
+                    <li>📧 info@bacoor.gov.ph</li>
+                    <li>📞 (046) 123-4567</li>
+                    <li>⏰ Mon-Fri: 8:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/CityGovtOfBacoor" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://twitter.com/bacoorcitylgu" target="_blank" rel="noopener">Twitter (X)</a></li>
+                    <li><a href="https://www.instagram.com/bacoorcitylgu" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/@CityGovtOfBacoor" target="_blank" rel="noopener">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bacoor City Government. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Announcements -->
+    <div id="announcement-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Announcement</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Service Requests -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Service Request Form</h2>
+                <button class="close-modal" onclick="closeServiceModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="service-form">
+                    <div class="form-group">
+                        <label for="service-type">Service Type *</label>
+                        <select id="service-type" name="service-type" required>
+                            <option value="">Select a service</option>
+                            <option value="Business Permit">Business Permit Application</option>
+                            <option value="Civil Registration">Civil Registration</option>
+                            <option value="Building Permit">Building Permit</option>
+                            <option value="Property Tax Payment">Real Property Tax Payment</option>
+                            <option value="Community Tax Certificate">Community Tax Certificate</option>
+                            <option value="Health Services">Health Services</option>
+                            <option value="Other">Other Services</option>
+                        </select>
+                        <span class="error-message">Please select a service type</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant-name">Full Name *</label>
+                        <input type="text" id="applicant-name" name="name" required>
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant-email">Email Address *</label>
+                        <input type="email" id="applicant-email" name="email" required>
+                        <span class="error-message">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant-phone">Phone Number *</label>
+                        <input type="tel" id="applicant-phone" name="phone" required>
+                        <span class="error-message">Please enter your phone number</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="applicant-address">Address *</label>
+                        <input type="text" id="applicant-address" name="address" required>
+                        <span class="error-message">Please enter your address</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="request-details">Request Details *</label>
+                        <textarea id="request-details" name="details" required></textarea>
+                        <span class="error-message">Please provide details of your request</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
